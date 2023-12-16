@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    background-color: #4CAF50;
+    color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    top: 80px;
+    left: 50%;
+    width: 100%;
+}
+  
+  h2 {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  h4{
+    margin: 0;
+    text-align: center;
+  }
+  form input,
+  form button,
+  form checkbox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: static;
+  }
+  form .checkbox-label {
+    align-items: center;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  form .checkbox-label label {
+    margin-right: 8px;
+  }
+  
+  form .checkbox-label input {
+    width: 15px;
+  }
+  form button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .bookshelves {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .shelf {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shelf h3 {
+    color: #4CAF50;
+    margin-bottom: 16px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #d9ffd9;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  li button {
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  li button:last-child {
+    background-color: #2196F3;
+  }
+  
+  @media (max-width: 768px) {
+    .bookshelves {
+      flex-direction: column;
+    }
+  
+    .shelf {
+      margin-top: 20px;
+    }
+  }
+  
